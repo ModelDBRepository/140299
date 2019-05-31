@@ -1,0 +1,19 @@
+proc loadModel() {
+    load_file($s1)
+    load_file("gui.ses")
+    load_file("graph.ses")
+    load_file("runcontrol.hoc")
+}
+
+{
+    xpanel("ModelSelection", 0)
+    xbutton("BE17BNoActive", "loadModel(\"BE17B_length_adjusted_NoActive.hoc\")")
+    xbutton("BE17BMixedDiamNoActive", "loadModel(\"BE17B_length_adjusted_mixedDiam_NoActive.hoc\")")
+    xbutton("BE59DNoActive", "loadModel(\"BE59D_length_adjusted_NoActive.hoc\")")
+    xbutton("BE59DMixedDiamNoActive", "loadModel(\"BE59D_length_adjusted_mixedDiam_NoActive.hoc\")")
+    xbutton("BE77CNoActive", "loadModel(\"BE77C_length_adjusted_NoActive.hoc\")")
+    xbutton("BE77CMixedDiamNoActive", "loadModel(\"BE77C_length_adjusted_mixedDiam_NoActive.hoc\")")
+    xbutton("LV38ENoActive", "loadModel(\"LV38E_length_adjusted_NoActive.hoc\")")
+    xbutton("LV38EMixedDiamNoActive", "loadModel(\"LV38E_length_adjusted_mixedDiam_NoActive.hoc\")")
+    xpanel()
+}

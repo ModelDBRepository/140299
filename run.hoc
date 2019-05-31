@@ -1,0 +1,7 @@
+Ra_default = 200
+cm_default = 1
+g_pas_default = 0.00004
+e_pas_default = -65
+load_file("nrngui.hoc")
+load_file("model.ses")
+
